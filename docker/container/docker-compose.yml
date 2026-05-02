@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  db:
+    image: mysql:8.3
+    container_name: mysql-db-3  
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: gamestoreweb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
+    ports:
+      - "3310:3306"
+    volumes:
+      - mysql_data_3:/var/lib/mysql   
+
+volumes:
+  mysql_data_3:
