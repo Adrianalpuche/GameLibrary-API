@@ -21,7 +21,7 @@ A RESTful CRUD API built with **C# and ASP.NET Core 10** for managing a personal
 
 ```
 GameLibrary.Api/
-├── controllers/        # API route handlers (HTTP layer)
+├── Controllers/        # API route handlers (HTTP layer)
 ├── Models/             # Entity models (database schema)
 ├── Dtos/               # Data Transfer Objects (request/response shapes)
 ├── Mappers/            # Model ↔ DTO conversion logic
